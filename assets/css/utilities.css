@@ -1,0 +1,63 @@
+/* Font Utilities */
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+/* End of Font Utilities */
+
+/* Button Utilities */
+
+.btn {
+  padding: 12px 40px;
+}
+
+.btn-secondary {
+  background-color: #150544;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #1d085d;
+  color: white;
+}
+
+.btn-purple {
+  background-color: #614ef5;
+  color: white;
+}
+
+.btn-purple:hover {
+  background-color: #5842ff;
+  color: white;
+}
+
+/* End of Button Utilities */
+
+/* Color Utilties */
+
+.text-primary {
+  color: #150544 !important;
+}
+
+.text-secondary {
+  color: #5a6772 !important;
+}
+
+.text-secondary-50 {
+  color: #aba6bb !important;
+}
+
+.bg-purple {
+  background-color: #614ef5 !important;
+}
+
+.bg-primary {
+  background-color: #150544 !important;
+}
+
+/* End of Color Utilities */

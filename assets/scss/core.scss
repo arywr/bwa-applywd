@@ -1,0 +1,170 @@
+body {
+  color: #5a6772;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  .navbar-collapse {
+    .nav-item {
+      .nav-link {
+        color: #5a6772;
+        font-weight: 400;
+
+        &.active {
+          color: #150544;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+section {
+  padding: 50px 0 70px 0;
+
+  .sec-title {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 12px;
+  }
+
+  .sec-header {
+    margin-bottom: 70px;
+  }
+
+  &.sec-enterprice {
+    background-image: url(/assets/img/bg-enterprise-mask.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .sec-enterprice__features {
+      @media only screen and (min-width: 992px) {
+        width: 80%;
+      }
+
+      .sec-enterprice__card {
+        @media only screen and (min-width: 992px) {
+          padding: 25px 40px;
+        }
+
+        .icons {
+          height: 70px;
+          width: 70px;
+          border-radius: 26px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+
+  &.sec-pricing {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 560px;
+      bottom: 0;
+      left: 0;
+      background: #e7f6ff;
+      z-index: -1;
+    }
+
+    .sec-pricing__list {
+      margin-bottom: 70px;
+
+      .card {
+        padding: 12px 30px 30px 30px;
+        margin: 0 25px;
+        border-radius: 12px;
+
+        @media only screen and (min-width: 992px) {
+          max-width: 320px;
+        }
+
+        &.card-lifetime {
+          outline: 2px solid #150544;
+          outline-offset: -2px;
+          padding-bottom: 30px !important;
+
+          .card-tag {
+            padding: 12px 0;
+            border-top-right-radius: 12px;
+            border-top-left-radius: 12px;
+          }
+        }
+
+        .card-header {
+          border-bottom: 1.5px solid #dfe2e4;
+
+          h5 {
+            font-size: 16px !important;
+
+            span {
+              font-weight: bold;
+              font-size: 52px;
+              line-height: 78px;
+            }
+          }
+        }
+
+        .card-body {
+          ul {
+            margin-bottom: 20px;
+
+            .features {
+              margin: 12px 0;
+
+              .checklist {
+                width: 26px;
+                height: 26px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 999px;
+                margin-right: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.sec-testimonial {
+    padding-top: 120px;
+    background-image: url(/assets/img/bg-testimonial-mask.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    blockquote {
+      margin-bottom: 50px;
+      position: relative;
+
+      @media only screen and (min-width: 992px) {
+        width: 60%;
+
+        &::before {
+          content: "\201C";
+          font-family: "Georgia", serif;
+          display: block;
+          font-size: 230px;
+          position: absolute;
+          left: -90px;
+          top: -120px;
+          color: #614ef5;
+        }
+      }
+
+      span {
+        border-bottom: 1px solid #614ef5;
+      }
+    }
+  }
+}
