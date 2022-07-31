@@ -93,16 +93,19 @@ section.sec-pricing .sec-pricing__list .card {
   }
 }
 
-section.sec-pricing .sec-pricing__list .card.card-lifetime {
-  outline: 2px solid #150544;
-  outline-offset: -2px;
-  padding-bottom: 30px !important;
-}
-
 section.sec-pricing .sec-pricing__list .card.card-lifetime .card-tag {
   padding: 12px 0;
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
+}
+
+section.sec-pricing .sec-pricing__list .card.card-lifetime .card-outer {
+  border-left: 2px solid #150544;
+  border-right: 2px solid #150544;
+  border-bottom: 2px solid #150544;
+  padding-bottom: 30px !important;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 section.sec-pricing .sec-pricing__list .card .card-header {
